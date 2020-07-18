@@ -1,0 +1,21 @@
+{
+  "name": "PageView",
+  "version": "0.0.1",
+  "summary": "A control that mimics PageView functionality with added customization options.",
+  "description": "This is a UIControl that mimics the functionality of PageView while also adding additional customization options that are not available using the base PageView",
+  "homepage": "https://github.com/prochol/PageView",
+  "license": "MIT",
+  "authors": {
+    "Kuzmin Pavel": "prochol@ya.ru"
+  },
+  "source": {
+    "git": "https://github.com/prochol/PageView.git",
+    "tag": "0.0.1"
+  },
+  "platforms": {
+    "ios": "11.0"
+  },
+  "requires_arc": true,
+  "source_files": "Pod/Classes/*.swift",
+  "resources": "Pod/Classes/*.xib"
+}
