@@ -31,8 +31,20 @@ class ViewPage: UIView, IPageView {
     
     private func setup() {
         let nameOfClass = NSStringFromClass(type(of: self)).components(separatedBy: ".").last!
-        Bundle.main.loadNibNamed(nameOfClass, owner: self, options: nil)
+        let bundle = Bundle.init(for: Self.self)
+        bundle.loadNibNamed(nameOfClass, owner: self, options: nil)
         addSubview(titleLabel)
-        titleLabel.frame = self.bounds
+        
+        addConstraints(forView: titleLabel)
+    }
+    
+    private func addConstraints(forView view: UIView) {
+        view.translatesAutoresizingMaskIntoConstraints = false
+        NSLayoutConstraint.activate([
+            view.topAnchor.constraint(equalTo: topAnchor),
+            view.bottomAnchor.constraint(equalTo: bottomAnchor),
+            view.leadingAnchor.constraint(equalTo: leadingAnchor),
+            view.trailingAnchor.constraint(equalTo: trailingAnchor)
+        ])
     }
 }

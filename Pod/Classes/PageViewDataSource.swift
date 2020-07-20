@@ -7,10 +7,12 @@
 
 import Foundation
 
-public protocol IPageView {
+@objc
+public protocol IPageView where Self : UIView {
 }
     
+@objc
 public protocol PageViewDataSource {
     func numberOfPages(in pageView: PageView) -> Int
-    func pageView(_ pageView: PageView, pageAt index: Int) -> IPageView
+    @objc func pageView(_ pageView: PageView, pageAt index: Int) -> IPageView
 }

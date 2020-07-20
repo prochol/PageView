@@ -15,12 +15,15 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
         
-        
+        pageView.currentIndex = 0
     }
-
-
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        
+        pageView.currentIndex = 0
+    }
 }
 
 extension ViewController: PageViewDataSource {
@@ -29,11 +32,11 @@ extension ViewController: PageViewDataSource {
     }
     
     func pageView(_ pageView: PageView, pageAt index: Int) -> IPageView {
-        var pageView = ViewPage()
+        let viewPage = ViewPage()
         
-        Bundle.main.loadNibNamed("ViewPage", owner: pageView)
-        pageView.index = index
+        viewPage.backgroundColor = UIColor.white
+        viewPage.index = index
         
-        return pageView
+        return viewPage
     }
 }
