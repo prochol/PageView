@@ -13,6 +13,7 @@
 		8575CF31A308C6CDF9BD72F1F19AAF74 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
 		9A574F66783CF228D12786A1DF299DA1 /* PageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D90653B26F1E1F0EC95BD7EADCF20FF6 /* PageView.swift */; };
 		B781E59F80743B6EA7F6859D8289F233 /* Pods-PageView-Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 44C14FB917EFEA22A190E8F97C2FF1E6 /* Pods-PageView-Example-dummy.m */; };
+		BAECBACF2625541500B0DE1E /* PageViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAECBACE2625541500B0DE1E /* PageViewDelegate.swift */; };
 		CD6D00D08867EB3559A7706EFABAEDCE /* Pods-PageView-Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 070C2FF1723CCB01E40291606DE82A7E /* Pods-PageView-Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D3BEA628F198690D6A707C10DBFAD880 /* PageView-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 1C4E369623CA9FB668F6B4650038ED1F /* PageView-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		DB596EDAABD28A685E1EF34984C02B0A /* PageViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4D35B4657CAE00DE5D40118009BBEBE /* PageViewDataSource.swift */; };
@@ -36,16 +37,17 @@
 		3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		392FF6B6748D90B86490C7EAB35B03D7 /* PageView-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "PageView-Info.plist"; sourceTree = "<group>"; };
 		44C14FB917EFEA22A190E8F97C2FF1E6 /* Pods-PageView-Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-PageView-Example-dummy.m"; sourceTree = "<group>"; };
-		462F18E091D2149B69B377AFA21759F9 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		462F18E091D2149B69B377AFA21759F9 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		482CED04FBB87D0F982A4FF13E16064A /* Pods-PageView-Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-PageView-Example-frameworks.sh"; sourceTree = "<group>"; };
 		6FBA385052E4E10A6EFB1130DD15F30C /* PageView.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = PageView.modulemap; sourceTree = "<group>"; };
-		81FE0B2D07D66FB8369778CAEDA8697F /* Pods_PageView_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_PageView_Example.framework; path = "Pods-PageView-Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		81FE0B2D07D66FB8369778CAEDA8697F /* Pods_PageView_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PageView_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		84A370FCB167746393E1AC63C86DA94B /* PageView.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; name = PageView.xib; path = Pod/Classes/PageView.xib; sourceTree = "<group>"; };
 		8C6FA2009D557F17675E619947F0757A /* Pods-PageView-Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PageView-Example.release.xcconfig"; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		A1B752356BB1D629B23201555899A40B /* PageView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = PageView.framework; path = PageView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A1B752356BB1D629B23201555899A40B /* PageView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = PageView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A4D35B4657CAE00DE5D40118009BBEBE /* PageViewDataSource.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PageViewDataSource.swift; path = Pod/Classes/PageViewDataSource.swift; sourceTree = "<group>"; };
 		B7FD81F7F5B9A37BB11F61CF03CC4791 /* PageView.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = PageView.debug.xcconfig; sourceTree = "<group>"; };
+		BAECBACE2625541500B0DE1E /* PageViewDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PageViewDelegate.swift; path = Pod/Classes/PageViewDelegate.swift; sourceTree = "<group>"; };
 		BEA154AF58DC9AB48C65328EC14B90C9 /* PageView-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PageView-prefix.pch"; sourceTree = "<group>"; };
 		CB874B0068F5B1D0DAEC7B1640760DC9 /* Pods-PageView-Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-PageView-Example-acknowledgements.markdown"; sourceTree = "<group>"; };
 		D90653B26F1E1F0EC95BD7EADCF20FF6 /* PageView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PageView.swift; path = Pod/Classes/PageView.swift; sourceTree = "<group>"; };
@@ -53,7 +55,7 @@
 		ED6511ADBA88B106FC686E4D8A02BFC0 /* Pods-PageView-Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-PageView-Example-Info.plist"; sourceTree = "<group>"; };
 		F09981406E7DB31BBAEA578CB6AB4302 /* Pods-PageView-Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-PageView-Example-acknowledgements.plist"; sourceTree = "<group>"; };
 		F1EC9193482270477FC7EFA4B06BFEDB /* PageView-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "PageView-dummy.m"; sourceTree = "<group>"; };
-		FED6CC3F553DC4B910E7D27CA7F22E71 /* PageView.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = PageView.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		FED6CC3F553DC4B910E7D27CA7F22E71 /* PageView.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = PageView.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -137,6 +139,7 @@
 			children = (
 				D90653B26F1E1F0EC95BD7EADCF20FF6 /* PageView.swift */,
 				A4D35B4657CAE00DE5D40118009BBEBE /* PageViewDataSource.swift */,
+				BAECBACE2625541500B0DE1E /* PageViewDelegate.swift */,
 				BB8293794806382C95173E1E691A892C /* Pod */,
 				2A19DDEEC6580B44A0ACABE6FCFE2609 /* Resources */,
 				A5A911123A9256BA0F961D5E8340C882 /* Support Files */,
@@ -308,6 +311,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BAECBACF2625541500B0DE1E /* PageViewDelegate.swift in Sources */,
 				20518798852DF1FA2B816DAE1A1E0C83 /* PageView-dummy.m in Sources */,
 				9A574F66783CF228D12786A1DF299DA1 /* PageView.swift in Sources */,
 				DB596EDAABD28A685E1EF34984C02B0A /* PageViewDataSource.swift in Sources */,
